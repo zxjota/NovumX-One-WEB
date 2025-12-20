@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - StuMxoers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #4a6fa5 0%, #3a5980 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-text h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .contact-email {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        /* Main Content */
+        .privacy-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .intro {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .intro h2 {
+            color: #4a6fa5;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .policy-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: #4a6fa5;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f4f8;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            background-color: #eef2f7;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .section-content {
+            color: #444;
+            font-size: 1.05rem;
+        }
+        
+        .section-content p {
+            margin-bottom: 15px;
+        }
+        
+        .section-content ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .section-content li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #4a6fa5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .footer-links a {
+            color: #4a6fa5;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                text-align: center;
+            }
+            
+            .privacy-container {
+                padding: 25px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .privacy-container {
+                padding: 20px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4a6fa5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .back-to-top:hover {
+            background-color: #3a5980;
+            transform: translateY(-3px);
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>StuMxoers</h1>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>For privacy-related inquiries:</p>
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i> yasham.media@gmail.com
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="privacy-container">
+            <!-- Introduction -->
+            <div class="intro">
+                <h2>Our Commitment to Your Privacy</h2>
+                <p>This Privacy Policy describes how StuMxoers ("we", "us", or "our") collects, uses, and shares your personal information when you use our application. We are committed to protecting your privacy and ensuring you have a positive experience when using our services.</p>
+                <p class="last-updated">Last updated: September 15, 2023</p>
+            </div>
+            
+            <!-- Information We Collect -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-database"></i> Information We Collect</h3>
+                <div class="section-content">
+                    <p>We collect information to provide better services to all our users. The types of information we collect depend on how you use StuMxoers:</p>
+                    <ul>
+                        <li><strong>Account Information:</strong> When you create an account, we collect your name, email address, and other information you provide.</li>
+                        <li><strong>Usage Data:</strong> We collect information about how you interact with our application, including features you use, time spent, and preferences.</li>
+                        <li><strong>Device Information:</strong> We may collect device-specific information such as your device type, operating system, and unique device identifiers.</li>
+                        <li><strong>Content You Provide:</strong> Any content you create, upload, or share within the StuMxoers application.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- How We Use Information -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-cogs"></i> How We Use Your Information</h3>
+                <div class="section-content">
+                    <p>We use the information we collect to provide, maintain, and improve our services, including:</p>
+                    <ul>
+                        <li>Providing and personalizing the StuMxoers experience</li>
+                        <li>Developing new features and improving existing ones</li>
+                        <li>Communicating with you about updates, security alerts, and support messages</li>
+                        <li>Ensuring the security and integrity of our services</li>
+                        <li>Analyzing usage trends to understand how our services are being used</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>Note:</strong> We do not sell your personal information to third parties. We only share information as described in this Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Information Sharing -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-share-alt"></i> Information Sharing</h3>
+                <div class="section-content">
+                    <p>We do not share personal information with companies, organizations, or individuals outside of StuMxoers except in the following circumstances:</p>
+                    <ul>
+                        <li><strong>With Your Consent:</strong> We will share personal information with third parties when we have your consent to do so.</li>
+                        <li><strong>For Legal Reasons:</strong> We may disclose information if we believe it's reasonably necessary to comply with a law, regulation, or legal request.</li>
+                        <li><strong>Service Providers:</strong> We may share information with trusted third-party vendors who perform services on our behalf, subject to confidentiality agreements.</li>
+                        <li><strong>Business Transfers:</strong> If we are involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Data Security -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-lock"></i> Data Security</h3>
+                <div class="section-content">
+                    <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+                    <ul>
+                        <li>Encryption of data in transit and at rest</li>
+                        <li>Regular security assessments and testing</li>
+                        <li>Access controls to limit who can access user data</li>
+                        <li>Secure development practices for all our software</li>
+                    </ul>
+                    <p>While we strive to use commercially acceptable means to protect your personal information, no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+                </div>
+            </div>
+            
+            <!-- Your Rights and Choices -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-user-check"></i> Your Rights and Choices</h3>
+                <div class="section-content">
+                    <p>You have certain rights regarding your personal information, including:</p>
+                    <ul>
+                        <li><strong>Access and Portability:</strong> You can request a copy of the personal information we hold about you.</li>
+                        <li><strong>Correction:</strong> You can request that we correct inaccurate or incomplete personal information.</li>
+                        <li><strong>Deletion:</strong> You can request deletion of your personal information, subject to certain exceptions.</li>
+                        <li><strong>Opt-out:</strong> You can opt out of certain data collection and processing activities.</li>
+                        <li><strong>Account Settings:</strong> You can update your account information and preferences through the application settings.</li>
+                    </ul>
+                    <p>To exercise any of these rights, please contact us at <strong>yasham.media@gmail.com</strong>.</p>
+                </div>
+            </div>
+            
+            <!-- Children's Privacy -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-child"></i> Children's Privacy</h3>
+                <div class="section-content">
+                    <p>StuMxoers is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will take steps to delete that information as quickly as possible.</p>
+                    <p>If you believe a child under 13 has provided us with personal information, please contact us at <strong>yasham.media@gmail.com</strong>.</p>
+                </div>
+            </div>
+            
+            <!-- Changes to This Policy -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-history"></i> Changes to This Policy</h3>
+                <div class="section-content">
+                    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this policy.</p>
+                    <p>We encourage you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="policy-section">
+                <h3 class="section-title"><i class="fas fa-envelope-open-text"></i> Contact Us</h3>
+                <div class="section-content">
+                    <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+                    <div class="highlight-box">
+                        <p><strong>Email:</strong> yasham.media@gmail.com</p>
+                        <p><strong>Regarding:</strong> StuMxoers Privacy Inquiry</p>
+                    </div>
+                    <p>We will respond to your inquiry as soon as possible, typically within 7-10 business days.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 StuMxoers. All rights reserved.</p>
+            <p>This Privacy Policy applies to the StuMxoers application and associated services.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Data Processing Agreement</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script>
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        // Initialize back to top button visibility
+        window.dispatchEvent(new Event('scroll'));
+        
+        // Add subtle animation to section titles on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all section titles
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.style.opacity = '0';
+            title.style.transform = 'translateY(20px)';
+            title.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(title);
+        });
+    </script>
+</body>
+</html>
